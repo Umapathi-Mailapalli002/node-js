@@ -32,7 +32,7 @@ fs.appendFile("log.txt", `\n${Date.now()}: ${req.ip} : ${req.method} : ${req.url
  
    
 });
-// Note:- if no next method is given in the middleware then it not jump to the next one
+// Note:- if no next exist method is given in the middleware then it not jump to the next one
 app.get("/users", (req, res) => {
   const html = `
     <ul>
