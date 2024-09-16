@@ -1,7 +1,7 @@
 import express from "express";
-import usersData from "./MOCK_DATA.json" assert { type: "json" };
+import Data from "./MOCK_DATA.json" assert { type: "json" };
 import fs from "fs"
-
+let usersData = Data;
 const app = express();
 const port = 5005;
 //middleware 
@@ -30,8 +30,6 @@ app
     const id = Number(req.params.id);
     const body = req.body;
     const user = usersData.find((user) => user.id === id)
-    console.log(user);
-    console.log(body);
     const updatedUser = { ...user, ...body };
     updatedUser.id=id;
     usersData[id-1]=updatedUser
@@ -42,10 +40,14 @@ app
   })
   .delete((req, res) => {
  const id = Number(req.params.id);
- const updatedData = usersData.filter((user) => user.id !== id);
-
+ usersData = usersData.filter((user) => user.id !== id);
+ usersData = usersData.map((user) => {
+  if(user.id > id) return {...user, id: user.id - 1};
+  return user;
+ })
+ 
  fs.writeFile('MOCK_DATA.json', JSON.stringify(usersData), (err, data) => {
-  return res.json({ status: "Success", updatedData })
+  return res.json({ status: "Success", usersData })
 })
 
   });
