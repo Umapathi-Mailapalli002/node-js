@@ -50,6 +50,9 @@ app
   .get((req, res) => {
     const id = Number(req.params.id);
     const user = usersData.find((user) => user.id === id);
+    if (!user) {
+      return res.status(404).json({ msg : "user not exist"})
+    }
     return res.json(user);
   })
   .patch((req, res) => {
