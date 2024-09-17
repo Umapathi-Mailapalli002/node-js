@@ -34,10 +34,7 @@ fs.appendFile("log.txt", `\n${Date.now()}: ${req.ip} : ${req.method} : ${req.url
 });
 // Note:- if no next exist method is given in the middleware then it not jump to the next one
 app.get("/users", (req, res) => {
- // Set custom header
- res.setHeader('X-Name', 'Ravi Mailapalli');
- console.log(req.headers);
-   const html = `
+  const html = `
     <ul>
     ${usersData.map((user) => `<li>${user.first_name}</li>`).join("")}
     </ul>
@@ -46,7 +43,6 @@ app.get("/users", (req, res) => {
 });
 app.get("/api/users", (req, res) => {
   return res.json(usersData);
-  
 });
 
 app
