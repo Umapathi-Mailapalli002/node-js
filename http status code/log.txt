@@ -1,0 +1,40 @@
+
+1726480369415: GET : /api/users
+1726480383122: GET : /api/users
+1726480392405: GET : /api/users/6
+1726480581997: ::1 : GET : /api/users/6
+1726549755991: ::1 : GET : /
+1726549770060: ::1 : GET : /users
+1726549770143: ::1 : GET : /favicon.ico
+1726549837471: ::1 : GET : /users
+1726549854738: ::1 : GET : /users/1000
+1726549866012: ::1 : GET : /api/users/1000
+1726550074421: ::1 : GET : /users/
+1726550131679: ::1 : GET : /users/
+1726550205160: ::1 : GET : /users/
+1726550346402: ::1 : GET : /users/
+1726550377991: ::1 : GET : /api/users/3
+1726550467753: ::1 : GET : /api/users
+1726550489442: ::1 : GET : /api/users
+1726550575923: ::1 : GET : /api/users
+1726550728814: ::1 : GET : /api/users
+1726550765495: ::1 : GET : /api/users
+1726550780581: ::1 : GET : /api/users
+1726550871573: ::1 : GET : /api/users
+1726551248372: ::1 : GET : /api/users
+1726551498024: ::1 : GET : /users
+1726551511915: ::1 : GET : /users
+1726551533591: ::1 : GET : /users
+1726551551334: ::1 : GET : /users
+1726551713229: ::1 : GET : /users
+1726551748619: ::1 : GET : /users
+1726551798145: ::1 : GET : /users
+1726551943272: ::1 : GET : /users
+1726553130012: ::1 : GET : /users
+1726553188911: ::1 : GET : /users
+1726555198942: ::1 : GET : /api/users
+1726555416491: ::1 : POST : /api/users
+1726555474644: ::1 : POST : /api/users
+1726555524359: ::1 : GET : /users
+1726555791170: ::1 : POST : /api/users
+1726555809976: ::1 : POST : /api/users
