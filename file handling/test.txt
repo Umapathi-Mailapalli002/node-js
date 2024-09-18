@@ -1,9 +1,0 @@
-hey this is a async way to create a file in the node js13hey there
-hey there
-hey there
-hey there
-Fri Sep 13 2024 12:06:09 GMT+0530 (India Standard Time)/8?2024 hey there
-Fri Sep 13 2024 12:06:38 GMT+0530 (India Standard Time)/8?2024 hey there
-1726209528546 13/8?2024 hey there
-1726209558783 13/9/2024 hey there
-12:11:57 13/9/2024 hey there
